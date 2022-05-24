@@ -24,5 +24,6 @@ rest=${t#*$searchstring}
 echo "Tamaño total" $(( ${#t})) #
 echo "Cuantos caracteres quedan despues de encontrar el string (hg)" $(( ${#rest} )) #Tamaño total
 echo "Tamaño del string que buscamos " $(( ${#searchstring} ))
+echo "Caracteres que quedan despues de encontrar el string" $(( ${#rest} ))
 echo "Donde empieza el string" $(( ${#t} - ${#rest} - ${#searchstring} ))
 echo "Hacemos el substring ${t:${#t} - ${#rest} - ${#searchstring}:${#searchstring}}"
